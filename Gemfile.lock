@@ -344,7 +344,6 @@ DEPENDENCIES
   i18n-tasks (= 0.9.0)
   jquery-rails
   jquery-timepicker-rails
-  json
   kaminari
   nprogress-rails (~> 0.1.6.3)
   octokit (~> 4.2.0)

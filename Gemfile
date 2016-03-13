@@ -47,17 +47,15 @@ gem 'attachable'
 gem 'devise', '~> 3.5.5'
 gem 'cancancan'
 
-gem 'json'
 gem 'rubyzip', '~> 1.1.6'
 
 # Process jobs in the background
-gem 'foreman', group: :development
 gem 'delayed_job_active_record'
 gem 'clockwork'
 
 group :test do
-  gem 'bundler-audit', require: false, group: :test
-  gem 'codeclimate-test-reporter', group: :test, require: nil
+  gem 'bundler-audit', require: false
+  gem 'codeclimate-test-reporter', require: nil
 end
 
 gem 'kaminari'
@@ -75,8 +73,10 @@ gem 'google-analytics-turbolinks', '~> 0.0.4'
 
 # I18n Tasks
 group :development do
+  gem 'foreman'
   gem 'i18n-tasks', '0.9.0'
   gem 'slop', '~> 3.6.0' # Required due to https://github.com/glebm/i18n-tasks/issues/118
+  gem 'web-console', '~> 2.0'
 end
 
 gem 'i18n-js', '>= 3.0.0.rc8', '< 3.1.0'
@@ -85,6 +85,3 @@ gem 'i18n-js', '>= 3.0.0.rc8', '< 3.1.0'
 gem 'octokit', '~>4.2.0'
 
 gem 'font-awesome-sass'
-
-# Web console
-gem 'web-console', '~> 2.0', group: :development
