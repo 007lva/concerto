@@ -5,14 +5,11 @@ sudo: false
 
 rvm:
   - 2.2.4
-  - 2.3.0
 
 bundler_args: --without development production --path vendor
 
 before_script:
   - cp config/database.yml.travis config/database.yml
-  - git submodule init
-  - git submodule update
   - bundle exec rake db:setup
 
 after_script:
