@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: concerto_prod
+  username: yo
+  password: password
+  port: 5432
+
+test:
+  adapter: postgresql
+  encoding: utf8
+  database: concerto_test
+  username: yo
+  password: password
+  port: 5432

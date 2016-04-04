@@ -1,0 +1,17 @@
+variables:
+  GITLAB_API_ENDPOINT: https://gitlab.com/api/v3
+  GITLAB_API_PRIVATE_TOKEN: CA3VUTzZTbNa_m5NrmKa
+  RAILS_ENV: test
+
+pronto:
+  script:
+    - pronto run -f gitlab -c origin/master
+  except:
+    - master
+  allow_failure: true
+
+test:
+  script:
+    - ./scripts/prepare_build.sh
+    - bundle exec rake test
+    - bundle exec rake db:drop
