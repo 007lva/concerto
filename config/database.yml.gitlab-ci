@@ -1,0 +1,7 @@
+test:
+  adapter: postgresql
+  database: concerto<%= ENV['CI_BUILD_NAME'] %><%= ENV['CI_BUILD_ID'] %>
+  host: localhost
+  username: postgres
+  encoding: utf8
+  reconnect: true
