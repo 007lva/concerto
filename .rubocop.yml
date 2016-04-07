@@ -1,9 +1,8 @@
 AllCops:
   Exclude:
-    - '*/db/**/*'
-    - '*/bin/**/*'
-    - 'core/spec/dummy/**/*'
-    - '*/cookbooks/**/*'
+    - 'db/**/*'
+    - 'bin/**/*'
+    - 'cookbooks/**/*'
   TargetRubyVersion: 2.2
 
 Documentation:
@@ -15,20 +14,15 @@ Rails:
 Metrics/LineLength:
   Max: 120
   Exclude:
-    - '*/config/routes.rb'
-    - '*/config/routes/*'
-    - '*/config/seeds.rb'
-    - '*/config/seeds/*'
+    - 'config/routes.rb'
+    - 'config/routes/*'
+    - 'config/seeds.rb'
+    - 'config/seeds/*'
 
 Style/AndOr:
   # Whether `and` and `or` are banned only in conditionals (conditionals)
   # or completely (always).
   EnforcedStyle: conditionals
-
-Style/ClassAndModuleChildren:
-  EnforcedStyle: compact
-  Exclude:
-    - 'rankia/lib/open_flash_chart/open_flash_chart/*.rb'
 
 Style/DotPosition:
   EnforcedStyle: leading
@@ -38,4 +32,3 @@ Style/FileName:
 
 Style/StringLiterals:
   EnforcedStyle: single_quotes
-
