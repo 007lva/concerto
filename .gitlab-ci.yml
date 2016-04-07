@@ -1,6 +1,5 @@
 variables:
   GITLAB_API_ENDPOINT: https://gitlab.com/api/v3
-  GITLAB_API_PRIVATE_TOKEN: CA3VUTzZTbNa_m5NrmKa
   RAILS_ENV: test
 
 pronto:
