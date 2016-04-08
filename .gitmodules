@@ -1,3 +1,0 @@
-[submodule "vendor/tools/closure"]
-	path = vendor/tools/closure
-	url = https://code.google.com/p/closure-library/
