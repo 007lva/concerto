@@ -58,6 +58,7 @@ gem 'clockwork'
 group :test do
   gem 'bundler-audit', require: false
   gem 'codeclimate-test-reporter', require: nil
+  gem 'byebug'
 end
 
 gem 'kaminari'

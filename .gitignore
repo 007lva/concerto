@@ -19,3 +19,4 @@ Gemfile-plugins.bak
 Gemfile.local
 *.sublime*
 .idea
+.byebug_history
