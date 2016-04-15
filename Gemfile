@@ -10,11 +10,6 @@ gem 'rails', '~> 4.2.5'
 # root directory.
 basedir = File.dirname(__FILE__)
 
-# Load the gems used for remote reporting.
-if File.exists?("#{basedir}/Gemfile-reporting")
-  eval File.read("#{basedir}/Gemfile-reporting")
-end
-
 # The Gemfile-plugins gem list is managed by Concerto itself,
 # through the ConcertoPlugins controller.
 group :concerto_plugins do
@@ -87,3 +82,4 @@ gem 'i18n-js', '>= 3.0.0.rc8', '< 3.1.0'
 gem 'octokit', '~>4.2.0'
 
 gem 'font-awesome-sass'
+gem 'airbrake'
