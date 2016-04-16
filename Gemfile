@@ -58,7 +58,6 @@ gem 'clockwork'
 group :test do
   gem 'bundler-audit', require: false
   gem 'codeclimate-test-reporter', require: nil
-  gem 'byebug'
 end
 
 gem 'kaminari'
@@ -80,6 +79,10 @@ group :development do
   gem 'i18n-tasks', '0.9.0'
   gem 'slop', '~> 3.6.0' # Required due to https://github.com/glebm/i18n-tasks/issues/118
   gem 'web-console', '~> 2.0'
+end
+
+group :development, :test do
+  gem 'byebug'
 end
 
 gem 'i18n-js', '>= 3.0.0.rc8', '< 3.1.0'
