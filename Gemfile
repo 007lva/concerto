@@ -76,6 +76,10 @@ group :development do
   gem 'web-console', '~> 2.0'
 end
 
+group :development, :test do
+  gem 'byebug'
+end
+
 gem 'i18n-js', '>= 3.0.0.rc8', '< 3.1.0'
 
 #Github API
