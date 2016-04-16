@@ -83,3 +83,7 @@ gem 'octokit', '~>4.2.0'
 
 gem 'font-awesome-sass'
 gem 'airbrake'
+
+group :production do
+  gem 'rails_12factor'
+end
